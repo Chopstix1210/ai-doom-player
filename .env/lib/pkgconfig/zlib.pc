@@ -1,0 +1,13 @@
+prefix=/home/kevin/Documents/ai-doom-player/.env
+exec_prefix=/home/kevin/Documents/ai-doom-player/.env
+libdir=/home/kevin/Documents/ai-doom-player/.env/lib
+sharedlibdir=/home/kevin/Documents/ai-doom-player/.env/lib
+includedir=/home/kevin/Documents/ai-doom-player/.env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
