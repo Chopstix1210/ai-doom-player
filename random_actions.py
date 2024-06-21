@@ -18,7 +18,7 @@ for episode in range(episodes):
         state = game.get_state()
         img = state.screen_buffer
         info = state.game_variables
-        reward = game.make_action(random.choice(actions))
+        reward = game.make_action(random.choice(actions), 4) # skips 4 frames 
         print('reward: ', reward)
         time.sleep(0.02)
     print('Result: ', game.get_total_reward())
